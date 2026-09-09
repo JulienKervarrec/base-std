@@ -124,3 +124,8 @@ behavior diverges from the Solidity reference at the asserted slot.
 ## License
 
 MIT
+
+
+## Parcours francais
+
+Une lecture pedagogique en francais de ce depot, chapitre par chapitre, est disponible dans [docs/fr/](docs/fr/README.md).

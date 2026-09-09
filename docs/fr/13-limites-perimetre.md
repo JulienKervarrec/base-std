@@ -1,0 +1,7 @@
+# Chapitre 13 -- Limites et perimetre de ce parcours
+
+Ce parcours couvre la surface Solidity complete de base-std telle qu elle existe dans le depot base/base-std a la date du clone : les trois precompiles singletons (Factory, Policy Registry, Activation Registry), le socle `IB20` commun, et ses deux variantes `IB20Asset` et `IB20Stablecoin`.
+
+Sont volontairement laisses hors champ : l implementation Rust reelle des precompiles dans le client Base (ce depot ne contient que l interface Solidity et des mocks de test, jamais la logique native elle-meme) ; le detail complet des guides d integration (`docs/guides/`) au-dela de ce qui a ete cite dans les chapitres precedents ; le mecanisme de test double mode (`base-forge` contre les vraies precompiles Rust via `base-anvil`, decrit dans `LIVE_PRECOMPILE_TESTING.md`) qui releve de l outillage de developpement plutot que du protocole lui-meme ; et l historique detaille des versions/hardforks passes au-dela du principe general explique au chapitre 12.
+
+L objectif reste le meme que pour les parcours precedents de cette bibliotheque : donner une comprehension solide et verifiee du mecanisme central -- ici, comment Base integre un standard de token conforme directement dans son client, comme precompile a etat plutot que comme contrat deploye, avec la conformite (roles, pause, policies, saisie) comme brique native plutot qu ajout applicatif -- sans pretendre couvrir l integralite de l ecosysteme B20.
